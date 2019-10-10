@@ -1,3 +1,7 @@
+<?php
+	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+?>
+<!DOCTYPE HTML>
 <html lang="pt-br">
 
 <?php
@@ -5,6 +9,7 @@
 ?>
 <body>
 <main class="main">
+    
 <div class="container">
     
     <div class="card text-center" id="tela_login">
@@ -50,6 +55,14 @@
             Não tem uma conta? <a href="#" id="btn_registre">Registre-se agora!</a>
         </div>
     </div>
+
+    <?php
+		if($erro==1) {
+			echo '<div class="alert alert-danger text-center" role="alert">';
+			echo 'Usuário ou senha inválidos.';
+			echo '</div>';
+		}
+	?>
 
     <div class="nao_exibir" id="tela_cad_usu">
         <div class="card-header bg-dark texto_branco rounded-top">CADASTRO</div>

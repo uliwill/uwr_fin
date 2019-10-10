@@ -1,6 +1,6 @@
 // INICIALIZAÇÃO DO SISTEMA **********************************************************************************
 $(function() {
-    $("#conteudo").load("home.html");
+    $("#conteudo").load("cont_home.php");
     $('#log_email').focus();
 })
 // FIM - INICIALIZAÇÃO DO SISTEMA ****************************************************************************
