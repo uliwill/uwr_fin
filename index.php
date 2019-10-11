@@ -18,29 +18,24 @@
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <form class="form-horizontal" action="valida_acesso.php" method="post" id="form_login">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <form class="form-horizontal" action="valida_acesso.php" method="POST" id="form_login" name="form_login">
                         <fieldset>
                             <!-- Text input-->
-                            <div class="form-group">
-                                <label class="col-md-12 control-label" for="log_email"></label>  
+                            <div class="form-group"> 
                                 <div class="col-md-12">
                                     <input id="log_email" name="log_email" type="text" placeholder="E-mail" class="form-control input-md" required > 
                                 </div>
                             </div>
-
                             <!-- Password input-->
                             <div class="form-group">
-                                <label class="col-md-12 control-label" for="log_senha"></label>
                                 <div class="col-md-12">
                                     <input id="log_senha" name="log_senha" type="password" placeholder="Senha" class="form-control input-md" required >
                                 </div>
                             </div>
-
                             <!-- Button -->
                             <div class="form-group">
-                                <label class="col-md-12 control-label" for="btn_login"></label>
                                 <div class="col-md-12">
                                     <button id="btn_login" name="btn_login" class="btn btn-primary btn-lg btn-block">Entrar</button>
                                 </div>
@@ -48,7 +43,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
         </div>
         <div class="card-footer text-muted rounded-bottom">
@@ -58,18 +53,22 @@
 
     <?php
 		if($erro==1) {
-			echo '<div class="alert alert-danger text-center" role="alert">';
+			echo '<div class="alert alert-danger text-center" role="alert" id="avisoerrologin">';
 			echo 'Usuário ou senha inválidos.';
 			echo '</div>';
 		}
-	?>
+    ?>
+    <!-- TELA AVISOS -->
+    <div class="hide" id="telaavisos" role="alert">
+    </div>
+    <!-- TELA AVISOS -->
 
     <div class="nao_exibir" id="tela_cad_usu">
         <div class="card-header bg-dark texto_branco rounded-top">CADASTRO</div>
         <div class="card-body">
             <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
+                <div class="col-2"></div>
+                <div class="col-8">
                     <form class="form-horizontal" id="form_cad_usuario" name="form_cad_usuario" method="POST">
                         <fieldset>
                             <!-- Text input-->
@@ -101,7 +100,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
         </div>
     </div>
@@ -109,7 +108,7 @@
 
 </main>
 <?php
-    include_once("footer.html");
+    include_once("footer.php");
 ?>
 </body>
 </html>

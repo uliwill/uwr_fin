@@ -2,6 +2,9 @@
 $(function() {
     $("#conteudo").load("cont_home.php");
     $('#log_email').focus();
+    setTimeout(function() {
+        $('#avisoerrologin').attr('class', 'nao_exibir');
+    }, 3000);
 })
 // FIM - INICIALIZAÇÃO DO SISTEMA ****************************************************************************
 
@@ -28,7 +31,9 @@ $('#btn_login').click(function() {
     } else {
         $('#log_senha').css({'border-color': '#CCC'});
     }
-    if(campo_vazio) return false;
+    if(campo_vazio) {
+        return false;
+    }
 });
 
 // TRANSIÇÃO DE TELAS LOGIN / REGISTRO DE USUÁRIO ************************************************************
@@ -75,6 +80,18 @@ $('#btn_cad_usu').click(function() {
             }
         });
     }
-    CadUsuarioEfetuado(); 
+    CadUsuarioEfetuado();
+    ExibeAvisos('Usuário cadastrado com sucesso!','alert alert-success text-center',3000);    
 });
 // FIM CADASTRO DE USUÁRIOS **********************************************************************************
+
+// AVISO DE CADASTRO, EDIÇÃO OU EXCLUSÃO
+function ExibeAvisos(texto, classe, tempo) {
+    $('#telaavisos').html(texto);
+    $('#telaavisos').attr('class', classe);
+    setTimeout(OcAvisos, tempo); 
+}
+function OcAvisos() {
+    $('#telaavisos').attr('class', 'nao_exibir');
+}
+// FIM AVISO DE CADASTRO, EDIÇÃO OU EXCLUSÃO
