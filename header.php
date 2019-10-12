@@ -26,8 +26,8 @@
                     LANÇAMENTOS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('lanc_n_despesa.html')">Nova despesa</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('lanc_n_receita.html')">Nova receita</a>
+                        <a class="dropdown-item" href="#">Nova despesa</a>
+                        <a class="dropdown-item" href="#">Nova receita</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -35,9 +35,9 @@
                     CONSULTAS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cons_despesa.html')">Despesas</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cons_receita.html')">Receitas</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cons_resumo.html')">Resumo</a>
+                        <a class="dropdown-item" href="#">Despesas</a>
+                        <a class="dropdown-item" href="#">Receitas</a>
+                        <a class="dropdown-item" href="#">Resumo</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -45,11 +45,11 @@
                         MANUTENÇÃO
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('manut_tipo_despesa.html')">Tipos de despesa</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('manut_tipo_receita.html')">Tipos de receita</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('manut_despesa.html')">Despesas</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('manut_receita.html')">Receitas</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('manut_usuario.html')">Usuários</a>
+                        <a class="dropdown-item" href="#">Tipos de despesa</a>
+                        <a class="dropdown-item" href="#">Tipos de receita</a>
+                        <a class="dropdown-item" href="#">Despesas</a>
+                        <a class="dropdown-item" href="#">Receitas</a>
+                        <a class="dropdown-item" href="#">Usuários</a>
                     </div>
                 </li>
                 <li class="nav-item">
