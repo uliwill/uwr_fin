@@ -3,12 +3,11 @@
     if(!isset($_SESSION['usu_email'])) {
         header('Location: index.php?erro=1');
 	}
-    include_once("conn.php");
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
     <?php
-        include_once("head.html");
+        include_once("head.php");
     ?>
 <body>
     <?php

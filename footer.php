@@ -1,3 +1,7 @@
+<!-- TELA AVISOS -->
+<div class="hide" id="telaavisos" role="alert">
+</div>
+<!-- TELA AVISOS -->
 <!-- FOOTER - BEGIN -->
 <footer class="footer bg-dark">
     <div class="container">

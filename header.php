@@ -8,18 +8,17 @@
         
 
         <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="CarregaPage('cont_home.php')">HOME</a>
+                    <a class="nav-link" href="#" id="link_home"> Home <i class="fas fa-home"></i></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         CADASTROS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cad_tipo_despesa.html')">Tipos de despesa</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cad_tipo_receita.html')">Tipos de receita</a>
-                        <a class="dropdown-item" href="#" onclick="CarregaPage('cad_usuario.html')">Usuários</a>
+                        <a class="dropdown-item" href="#" id="link_cad_td">Tipos de despesa</a>
+                        <a class="dropdown-item" href="#" id="link_cad_tr">Tipos de receita</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

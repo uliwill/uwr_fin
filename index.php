@@ -5,7 +5,7 @@
 <html lang="pt-br">
 
 <?php
-    include_once("head.html");
+    include_once("head.php");
 ?>
 <body>
 <main class="main">
@@ -58,10 +58,6 @@
 			echo '</div>';
 		}
     ?>
-    <!-- TELA AVISOS -->
-    <div class="hide" id="telaavisos" role="alert">
-    </div>
-    <!-- TELA AVISOS -->
 
     <div class="nao_exibir" id="tela_cad_usu">
         <div class="card-header bg-dark texto_branco rounded-top">CADASTRO</div>
